@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+.home,
+.about,
+.product {
+    margin-left: 3em;
+}
+
+h1 {
+    text-decoration: underline;
+    color: hsl(33, 100%, 43%);
+}
+
+.p {
+    margin-left: 2em;
+    padding: 1em;
+    width: 80%;
+    font-size: 1.5em;
+}
+
+.nav {
+    background-color: rgb(44, 42, 42);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ul {
+
+    list-style-type: none;
+    display: flex;
+    gap: 50%;
+}
+
+.ul li {
+    padding: 3%;
+}
+
+
+.ul li:hover {
+    cursor: pointer;
+    /* border-radius: .2em; */
+    outline: 2px solid rgb(187, 169, 169);
+
+}
+
+.l {
+    color: white;
+    text-decoration: none;
+}
