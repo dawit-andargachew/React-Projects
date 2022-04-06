@@ -1,0 +1,33 @@
+.header-div {
+    background-color: darkslategray;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-h2 {
+    color: white;
+}
+
+.header-ul {
+    list-style: none;
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-ul li {
+    padding: .3em;
+
+}
+
+.header-ul li:hover {
+    cursor: pointer;
+    outline: 1px solid wheat;
+}
+
+.none{
+color: inherit;
+text-decoration: none;
+}
