@@ -47,7 +47,7 @@ var dummy_data = [
 function Products() {
   return (
     <div>
-      <h1>here is the products page</h1>
+      <h1 className="h1"> Here is the products page</h1>
 
       <div className="dynamic-div">
         {dummy_data.map((a) => {
