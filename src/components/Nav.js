@@ -17,6 +17,9 @@ function Nav() {
           <Link className={Styles.none} to="/products">
             <li>Products</li>
           </Link>
+          <Link className={Styles.none} to="/add">
+            <li>Add New</li>
+          </Link>
         </ul>
       </div>
     </header>

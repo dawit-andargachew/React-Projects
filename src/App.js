@@ -1,6 +1,7 @@
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Products from "./pages/Products";
+import AddNew from "./components/AddNew";
 
 import Nav from './components/Nav';
 
@@ -19,7 +20,10 @@ function App() {
         </Route>
         <Route path="/products">
           <Products></Products>
-        </Route>{" "}
+        </Route>
+        <Route path="/add">
+          <AddNew></AddNew>
+        </Route>
       </Switch>
     </div>
   );

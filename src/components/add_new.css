@@ -1,0 +1,100 @@
+label {
+    display: block;
+    font-size: 1.2em;
+    color: rgb(28, 103, 103);
+    font-weight: bold;
+}
+
+/* for input container */
+.container {
+    margin: 5% 15%;
+    padding: 2em;
+    border-radius: 1em;
+    background-color: lightgray;
+}
+
+
+/* for each individual input  */
+
+input {
+    width: 80%;
+    height: 4vh;
+    font-size: 1em;
+    color: rgb(16, 100, 100);
+    font-weight: 600;
+    margin: .4em;
+    padding: 1vh;
+    outline: .1em solid white;
+    border-radius: .3em;
+    border: .2em solid rgb(117, 180, 180);
+
+}
+
+input:focus {
+    border: .2em solid rgb(16, 100, 100);
+}
+
+
+/* helps to avoid autofill color changes  in input and text area*/
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: rgb(16, 100, 100) !important;
+}
+
+
+/*  for textarea */
+
+textarea {
+    min-width: 80%;
+    max-width: 90%;
+    min-height: 10em;
+    margin: .4em;
+    font-size: 1.2em;
+    color: rgb(16, 100, 100);
+    font-weight: 600;
+    outline: .2em solid white;
+    padding: 1.5vh;
+    border-radius: .3em;
+    border: .2em solid rgb(117, 180, 180);
+}
+
+textarea:focus {
+    border: .2em solid rgb(16, 100, 100);
+}
+
+
+/* for each input section  */
+.sinlge-input-part {
+    margin: .8em;
+    padding: .5em;
+}
+
+
+
+/* for button */
+
+.button-div {
+    display: flex;
+    border: none;
+    outline: none;
+}
+
+.button {
+    margin-left: auto;
+    font-size: 2vh;
+    color: white;
+    background-color: rgb(28, 103, 103);
+    padding: 1vh;
+    border-radius: .4em;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(28, 103, 103);
+    outline: .1em solid rgb(16, 100, 100);
+    border: .1em solid rgb(16, 100, 100);
+}
