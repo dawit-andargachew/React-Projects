@@ -1,7 +1,8 @@
-.h1{
+.h1 {
     margin-left: 3em;
 }
-.dynamic-div{
+
+.dynamic-div {
     margin: auto;
     /* margin-left: 3em; */
     padding: 1em;
@@ -12,27 +13,29 @@
     /* height: 20em; */
 }
 
-.dynamic-img{
+.dynamic-img {
     width: 20%;
     border-radius: 1em;
 
 }
-.dynamic-h3{
+
+.dynamic-h3 {
     margin-left: 1%;
     text-transform: capitalize;
 }
 
-.dynamic-p1{
+.dynamic-p1 {
     margin-left: 1em;
     font-weight: bold;
 }
-.dynamic-p2{
+
+.dynamic-p2 {
     margin-left: 1em;
     width: 70%;
     font-size: large;
 }
 
-.dynamic{
+.dynamic {
     /* border: 3px solid blue; */
     background-color: lightgrey;
     padding: 2em;

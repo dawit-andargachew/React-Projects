@@ -1,5 +1,6 @@
+import { useEffect, useState } from "react";
 import "./products.css";
-
+/* 
 var dummy_data = [
   {
     id: "1",
@@ -43,14 +44,52 @@ var dummy_data = [
       "This is the fist image of the draft about the project in thesis so look ti up and give your comments in the text below",
   },
 ];
+ */
 
 function Products() {
+  /*  */
+
+  const [isLoading, setIsLoading] = useState(true);
+  const [LoadedProducts, seLoadedProducts] = useState([]);
+
+  // useEffect() takes two arguments (function,[array of dependecies])
+  useEffect(() => {
+    setIsLoading(true);
+    fetch(
+      "https://react-getting-started-e0e8c-default-rtdb.firebaseio.com/Products.json"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        const products = [];
+
+        for (const key in data) {
+          const element = {
+            id: key,
+            ...data[key],
+          };
+          products.push(element);
+        }
+
+        setIsLoading(false);
+        seLoadedProducts(products);
+      });
+  }, []);
+
+  if (isLoading) {
+    return (
+      <section>
+        <p className="loading"> Loading...</p>
+      </section>
+    );
+  }
+
+  /*  */
   return (
     <div>
       <h1 className="h1"> Here is the products page</h1>
 
       <div className="dynamic-div">
-        {dummy_data.map((a) => {
+        {LoadedProducts.map((a) => {
           return (
             <div key={a.id} className="dynamic">
               {/* key helps to avoid errors occrs in console.log since each should have unique id */}

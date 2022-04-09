@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import "./add_new.css";
 
-function AddNewForm(props,props__2) {
+function AddNewForm(props, props__2) {
   const titleInputRef = useRef();
   const imageInputRef = useRef();
   const addressInputRef = useRef();
@@ -32,7 +32,6 @@ function AddNewForm(props,props__2) {
     /* helps to clear each input box after submit */
     const inputs = document.querySelectorAll(".clear_after");
     props__2.clear_the_inputs_box(inputs);
-
   }
 
   return (
@@ -48,8 +47,7 @@ function AddNewForm(props,props__2) {
               required
               id="title"
               ref={titleInputRef}
-            />{" "}
-            <br />
+            />
           </div>
 
           {/* image */}
@@ -61,8 +59,7 @@ function AddNewForm(props,props__2) {
               required
               id="image"
               ref={imageInputRef}
-            />{" "}
-            <br />
+            />
           </div>
 
           {/* address */}
@@ -75,7 +72,6 @@ function AddNewForm(props,props__2) {
               id="address"
               ref={addressInputRef}
             />
-            <br />
           </div>
 
           {/* description */}
@@ -89,7 +85,6 @@ function AddNewForm(props,props__2) {
               rows={5}
               ref={descriptionInputRef}
             ></textarea>
-            <br />
           </div>
           {/* button */}
           <div className="button-div">
