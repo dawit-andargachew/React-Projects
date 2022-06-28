@@ -18,15 +18,18 @@ https://user-images.githubusercontent.com/84455217/176241832-142a2ab5-5237-4093-
 # Registration 
 
 watch the video here
+
 https://user-images.githubusercontent.com/84455217/176241832-142a2ab5-5237-4093-b8f2-c432c11414b0.mp4
 
 # login 
 
 watch the video here
+
 https://user-images.githubusercontent.com/84455217/176241832-142a2ab5-5237-4093-b8f2-c432c11414b0.mp4
 
 
 # log out
+
 https://user-images.githubusercontent.com/84455217/176241832-142a2ab5-5237-4093-b8f2-c432c11414b0.mp4
 
 watch the video here
